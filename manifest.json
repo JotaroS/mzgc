@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "name": "MZGC Clicker",
+  "short_name": "MZGC",
+  "description": "Be creative as you click on browser every time.",
+  "version": "1.0",
+  "icons": {
+    "16": "images/icon/mizuguchi_16.png",
+    "19": "images/icon/mizuguchi_19.png",
+    "38": "images/icon/mizuguchi_38.png",
+    "48": "images/icon/mizuguchi_48.png",
+    "128": "images/icon/mizuguchi_128.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "images/icon/mizuguchi_16.png",
+      "19": "images/icon/mizuguchi_19.png",
+      "38": "images/icon/mizuguchi_38.png",
+      "48": "images/icon/mizuguchi_48.png",
+      "128": "images/icon/mizuguchi_128.png"
+    },
+    "default_title": "Link Checker",
+    "default_popup": "popup.html"
+  },
+
+  "author": "Jotaro Shigeyama",
+  "homepage_url":"http://jotaros.github.io",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": ["js/content_scripts/common.js"]
+    }
+  ]
+}
